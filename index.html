@@ -9,21 +9,24 @@
         <h1>Akan Calender</h1>
         <script src="js/scripts.js"></script>
 
-        <p>A simple app that uses your birthday and gender to calculate the day of the week you were born, and what your akan name would be.</p>
-
-        <p>Please select your gender:</p>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
+            <p>A simple app that uses your birthday and gender to calculate the day of the week you were born, and what your akan name would be.</p>
 
         <form action="/my-handling-form-page" method="post">
 
-        <p>Select your:</p>       
-            <label for="date_of_birth">Date of Birth:</label>
-            <input type="text" id="date_of_birth" name="user_date_of_birth">
-            <label for="month">Month & Year:</label>
-            <input type="month" id="month" name="user_month">
+            <p>Please select your gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+        <br>
+
+            <p>Please select your date of birth:</p>       
+                <label for="date">Date:</label>
+                <input type="text" id="date" name="user_date">
+                <label for="month">Month & Year:</label>
+                <input type="month" id="month" name="user_month">
+                <input type="submit" value="Submit">
         </form>
     </body>
 </html>
