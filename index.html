@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <div class="jumbotron"></div>
         <title>Akan Calender</title>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </div>
     </head>
     <body>
         <h1>Akan Calender</h1>
@@ -13,20 +15,22 @@
 
         <form action="/my-handling-form-page" method="post">
 
+            <form>
             <p>Please select your gender:</p>
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label><br>
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label><br>
 
-        <br>
+                <br>
 
             <p>Please select your date of birth:</p>       
                 <label for="date">Date:</label>
-                <input type="text" id="date" name="user_date">
+                <input type="text" id="date" name="date">
                 <label for="month">Month & Year:</label>
-                <input type="month" id="month" name="user_month">
+                <input type="month" id="month" name="month">
                 <input type="submit" value="Submit">
         </form>
+        </div>
     </body>
 </html>

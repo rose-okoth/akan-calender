@@ -1,9 +1,21 @@
-Day of the week (d) = ( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date ) % 7;
-
-var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-
-var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-
+function zeller(month, day, year) {
+    if (month < 3) {
+       month += 12; year -= 1;
+    }
+    var h = (day + parseInt(((month + 1) * 26) / 10) +
+       year + parseInt(year / 4) + 6 * parseInt(year / 100) +
+       parseInt(year / 400) - 1) % 7;
+    return h;
+ }
+ 
+ function doDemo() {
+    var m = parseInt(document.getElementById('month').value);
+    var d = parseInt(document.getElementById('day').value);
+    var y = parseInt(document.getElementById('year').value);
+    document.getElementById('result').innerHTML = demo(m,d,y);
+ }
+ 
+ 
 if (d = 0 && male) {
     console.log("Your Akan name is Kwasi.");
 } else if (d = 1 && male) {
