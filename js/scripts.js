@@ -8,12 +8,6 @@ function zeller(month, day, year) {
     return h;
  }
  
- function doDemo() {
-    var m = parseInt(document.getElementById('month').value);
-    var d = parseInt(document.getElementById('day').value);
-    var y = parseInt(document.getElementById('year').value);
-    document.getElementById('result').innerHTML = demo(m,d,y);
- }
  
  
 if (d = 0 && male) {
