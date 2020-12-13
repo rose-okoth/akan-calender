@@ -26,35 +26,35 @@ function zeller(month, day, year) {
     document.getElementById('result').innerHTML = demo(m,d,y);
  }
 
- if (day= 0 && male) {
+ if (day = 0 && male) {
    console.log("Your Akan name is Kwasi.");
-} else if (days = 1 && male) {
+} else if (day = 1 && male) {
    console.log("Your Akan name is Kwadwo.");
-} else if (days = 2 && male) {
+} else if (day = 2 && male) {
    console.log("Your Akan name is Kwabena.");
-} else if (days = 3 && male) {
+} else if (day = 3 && male) {
    console.log("Your Akan name is Kwaku.");
-} else if (days = 4 && male) {
+} else if (day = 4 && male) {
    console.log("Your Akan name is Yaw.");
-} else if (days = 5 && male) {
+} else if (day = 5 && male) {
    console.log("Your Akan name is Kofi.");
-} else if (days = 6 && male) {
+} else if (day = 6 && male) {
    console.log("Your Akan name is Kwame.");
-} else if (days = 0 && female) {
+} else if (day = 0 && female) {
    console.log("Your Akan name is Akosua.");
-} else if (days = 1 && female) {
+} else if (result === Monday && gender === female) {
    console.log("Your Akan name is Adwoa.");
-} else if (days = 2 && female) {
+} else if (day = 2 && female) {
    console.log("Your Akan name is Abenaa.");
-} else if (days = 3 && female) {
+} else if (day = 3 && female) {
    console.log("Your Akan name is Akua.");
-} else if (days = 4 && female) {
+} else if (day = 4 && female) {
    console.log("Your Akan name is Yaa.");
-} else if (days = 5 && female) {
+} else if (day = 5 && female) {
    console.log("Your Akan name is Afua.");
-} else if (days = 6 && female) {
+} else if (day = 6 && female) {
    console.log("Your Akan name is Ama.");
-} else if (date<=0 || date>31) {
+} else if (day <=0 || >31) {
    console.log("Invalid date. Input correct date.")
 } else if (month<=0 || month>12) {
    console.log("Invalid month. input the correct month.")

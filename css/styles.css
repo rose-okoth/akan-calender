@@ -11,3 +11,7 @@ body {
     border-radius: 10px;
     font-family: 'Fredoka One', cursive;
 }
+.gender {
+    margin: 0;
+    width: 50%;
+}
