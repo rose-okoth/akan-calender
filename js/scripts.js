@@ -1,3 +1,5 @@
+var d = new Date();
+document.getElementById("demo").innerHTML = d.getDay();
 function zeller(month, day, year) {
     if (month < 3) {
        month += 12; year -= 1;
@@ -7,6 +9,14 @@ function zeller(month, day, year) {
        parseInt(year / 400) - 1) % 7;
     return h;
  }
+
+ function demo(month, day, year) {
+    var mons =
+        ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var days =
+       ['Sunday', 'Monday', 'Tuesday', 'Wednesday','Thursday', 'Friday', 'Saturday'];
+    return mons[month-1] + ' ' + day + ', ' + year +' = ' + days[zeller(month, day, year)];
+ }
  
  function doDemo() {
     var m = parseInt(document.getElementById('month').value);
@@ -14,8 +24,7 @@ function zeller(month, day, year) {
     var y = parseInt(document.getElementById('year').value);
     document.getElementById('result').innerHTML = demo(m,d,y);
  }
- 
- 
+
 if (d = 0 && male) {
     console.log("Your Akan name is Kwasi.");
 } else if (d = 1 && male) {
