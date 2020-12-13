@@ -1,11 +1,12 @@
 body {
-    background-color: rgb(127, 187, 59);
+    background-color: rgba(42, 92, 9, 0.384);
     text-align: center;
     font-family: 'Andika New Basic', sans-serif;
 }
-. box-model {
-    border-left: 2px solid red;
-    border-right: 4px solid blue;
-    border-top: 6px solid orange;
-    border-bottom: 8px solid black;
+.box-model {
+    border-left: 2px solid rgb(49, 45, 45);
+    border-right: 2px solid rgb(49, 45, 45);
+    border-top: 2px solid rgb(49, 45, 45);
+    border-bottom: 2px solid rgb(49, 45, 45);
+    border-radius: 10px;
 }
