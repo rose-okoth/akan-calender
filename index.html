@@ -22,13 +22,17 @@
             <form>
                 <p>Please select your gender:</p>
                     <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label><br>
+                    <label for="male">Male</label>
                     <input type="radio" id="female" name="gender" value="female">
                     <label for="female">Female</label>
            
                 <br>
 
-                <p>Day  <select id="day">
+                <p>Please select your birth date:</p>
+
+                <br>
+
+                <p>Day:<select id="day">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -62,7 +66,7 @@
                     <option value="31">31</option>
                 </select></p>
 
-                <p>Month  <select id="month"> 
+                <p>Month:<select id="month"> 
                     <option value="1">January</option>
                     <option value="2">February</option>
                     <option value="3">March</option>
@@ -77,12 +81,12 @@
                     <option value="12">December</option>
                 </select></p>
                     
-                <p>Year <input id="year"></p>
+                <p>Year:<input id="year"></p>
                     
                 <p><input type="button" value="Submit" onclick="doDemo();" /></p>
 
             </form>
                     
-            <p id="result">----------</p>
+                <p id="result">________________</p>
     </body>
 </html>
