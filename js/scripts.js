@@ -26,36 +26,4 @@ function zeller(month, day, year) {
     document.getElementById('result').innerHTML = demo(m,d,y);
  }
 
- if (day = 0 && male) {
-   console.log("Your Akan name is Kwasi.");
-} else if (day = 1 && male) {
-   console.log("Your Akan name is Kwadwo.");
-} else if (day = 2 && male) {
-   console.log("Your Akan name is Kwabena.");
-} else if (day = 3 && male) {
-   console.log("Your Akan name is Kwaku.");
-} else if (day = 4 && male) {
-   console.log("Your Akan name is Yaw.");
-} else if (day = 5 && male) {
-   console.log("Your Akan name is Kofi.");
-} else if (day = 6 && male) {
-   console.log("Your Akan name is Kwame.");
-} else if (day = 0 && female) {
-   console.log("Your Akan name is Akosua.");
-} else if (result === Monday && gender === female) {
-   console.log("Your Akan name is Adwoa.");
-} else if (day = 2 && female) {
-   console.log("Your Akan name is Abenaa.");
-} else if (day = 3 && female) {
-   console.log("Your Akan name is Akua.");
-} else if (day = 4 && female) {
-   console.log("Your Akan name is Yaa.");
-} else if (day = 5 && female) {
-   console.log("Your Akan name is Afua.");
-} else if (day = 6 && female) {
-   console.log("Your Akan name is Ama.");
-} else if (day <=0 || >31) {
-   console.log("Invalid date. Input correct date.")
-} else if (month<=0 || month>12) {
-   console.log("Invalid month. input the correct month.")
-}
+ 
