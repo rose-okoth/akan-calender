@@ -6,13 +6,13 @@ var months =
          ['January','February','March','April','May','June',
         'July','August','September','October','November','December'];
 
-var akanMale = '';
-
 var akanMale = [ 'Kwasi', 'Kwadwo', 'Kwabena', 
          'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+console.log=(akanMale);
 
 var akanFemale = [ 'Akosua', 'Adwou', 'Abenaa', 
          'Akua', 'Yaa', 'Afua', 'Ama'];
+console.log=(akanFemale);
 
 var dayOfBirth = '';
 
@@ -28,7 +28,6 @@ function retrieveInput() {
    userInput.push(year);
    var gender= parseInt(document.getElementById('gender').value);
    userInput.push(gender);
-   document.getElementById('result').innerHTML = demo(m,d,y);
    return userInput;
 }
 
