@@ -78,5 +78,20 @@ function getTheDay() {
    alert(message);
 }
 
+function getGender(genderInput) {
+   var gender = genderInput.toUpperCase();
+   var isMale = 1;
+   var isFemale = 2:
+
+   if (gender.startsWith('M')) {
+      return isMale;
+   } else {
+      if (gender.startsWith('F')) {
+         return isFemale;
+      }else {
+         alert('UNKNOWN GENDER. INSERT THE CORRECT GENDER!')
+      }
+   }
+}
  
 
