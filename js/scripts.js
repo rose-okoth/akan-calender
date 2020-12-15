@@ -1,5 +1,15 @@
+var days =
+         ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
+       'Thursday', 'Friday', 'Saturday'];
+
+ var mons =
+         ['January','February','March','April','May','June',
+        'July','August','September','October','November','December'];
+
+
+
 function zeller(month, day, year) {
-    if (month < 3) {
+    if (month < 3) {                                                    
        month += 12; year -= 1;
     }
     var h = (day + parseInt(((month + 1) * 26) / 10) +
@@ -8,15 +18,10 @@ function zeller(month, day, year) {
     return h;
  }
 
- function demo(month, day, year) {
-    var mons =
-        ['January','February','March','April','May','June',
-        'July','August','September','October','November','December'];
-    var days =
-       ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
-       'Thursday', 'Friday', 'Saturday'];
-    return mons[month-1] + ' ' + day + ', ' + year +
-    ' = ' + days[zeller(month, day, year)];
+ function demo(month, day, year,) {
+   
+    
+    return mons[month-1] + ' ' + day + ', ' + year + ' = ' + days[zeller(month, day, year)];
  }
  
  function doDemo() {
@@ -26,4 +31,4 @@ function zeller(month, day, year) {
     document.getElementById('result').innerHTML = demo(m,d,y);
  }
 
- 
+
