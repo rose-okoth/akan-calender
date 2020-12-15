@@ -28,11 +28,12 @@ function retrieveInput() {
    userInput.push(year);
    var gender= parseInt(document.getElementById('gender').value);
    userInput.push(gender);
+   console.log(date.concat('\t').concat(month).concat('\t').concat(year));
    return userInput;
 }
 
 function getTheDay() {
-   var data = getInput();
+   var data = retrieveInput();
    var cloneList = [];
    var CC = parseInt(data[2].split(data[2][2])[0]);
    var YY = parseInt(data[2].split(data[2][1])[1]);
