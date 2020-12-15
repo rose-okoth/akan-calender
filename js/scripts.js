@@ -15,30 +15,66 @@ var dayOfBirth = '';
 
 var theAkanName = '';
 
+function retrieveInput() {
+   var userInput = [];
+   var date = parseInt(document.getElementById('date').value);
+   userInput.push(date);
+   var month = parseInt(document.getElementById('month').value);
+   userInput.push(month);
+   var year = parseInt(document.getElementById('year').value);
+   userInput.push(year);
+   var gender= parseInt(document.getElementById('gender').value);
+   userInput.push(gender);
+   return userInput;
+}
 
+function getTheDay() {
+   var data = getInput();
+   var cloneList = [];
+   var CC = parseInt(data[2].split(data[2][2])[0]);
+   var YY = parseInt(data[2].split(data[2][1])[1]);
+   var MM = parseInt(data[1]);
 
+   if( MM < 1 || MM > 12) {
+      alert('INACCURATE MONTH. PLEASE TRY AGAIN!')
+      return;
+   }
 
-function zeller(month, day, year) {
-    if (month < 3) {                                                    
-       month += 12; year -= 1;
-    }
-    var h = (day + parseInt(((month + 1) * 26) / 10) +
-       year + parseInt(year / 4) + 6 * parseInt(year / 100) +
-       parseInt(year / 400) - 1) % 7;
-    return h;
- }
+   var DD = parseInt(data[0]);
 
- function demo(month, day, year,) {
-   
-    
-    return mons[month-1] + ' ' + day + ', ' + year + ' = ' + days[zeller(month, day, year)];
- }
+   if( DD < 0 || DD > 31) {
+      alert('INACCURATE MONTH. PLEASE TRY AGAIN!')
+      return;
+   }
+
+   var gender = getGender(data[3]);
+
+   if (gender) {
+      if (gender === 1) {
+         cloneList = akanMale;
+      }
+
+      if (gender === 2) {
+         cloneList = akanFemale;
+      }
+   } else {
+      return;
+   }
+
+   var dayOf = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+   var dayOf = dayOf.toFixed();
+   dayOfBirth = days[dayOf];
+   theAkanName = cloneList[dayOf];
+
+   if (theAkanName === '' || dayOfBirth === '') {
+      alert('EMPTY FIELD. PLEASE INPUT YOUR DETAILS!');
+      getTheDay();
+   }
+
+   var message = 'Your Akan name is: ' + 'theAkanName';
+   message.concat('\n You were born on a: ') + 'dayOfBirth';
+   alert(message);
+}
+
  
- function doDemo() {
-    var m = parseInt(document.getElementById('month').value);
-    var d = parseInt(document.getElementById('day').value);
-    var y = parseInt(document.getElementById('year').value);
-    document.getElementById('result').innerHTML = demo(m,d,y);
- }
-
 
