@@ -2,9 +2,19 @@ var days =
          ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
        'Thursday', 'Friday', 'Saturday'];
 
- var mons =
+var mons =
          ['January','February','March','April','May','June',
         'July','August','September','October','November','December'];
+
+var akanMale = 
+         ['Kwasi' 'Kwadwo' 'Kwabena' 'Kwaku' 'Yaw' 'Kofi' 'Kwame'];
+
+var akanFemale = ['Akosua' 'Adwoa' 'Abenaa' 'Akua' 'Yaa' 'Afua' 'Ama'];
+
+var dayOfBirth = '';
+
+var theAkanName = '';
+
 
 
 
