@@ -74,8 +74,8 @@ function getTheDay() {
       getTheDay();
    }
 
-   var message = 'Your Akan name is: ' + 'theAkanName';
-   message.concat('\n You were born on a: ') + 'dayOfBirth';
+   var message = ('Your Akan name is: ').concat (theAkanName);
+   message.concat('\n You were born on a: ').concat (dayOfBirth);
    alert(message);
 }
 
