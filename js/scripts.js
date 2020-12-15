@@ -94,5 +94,14 @@ function getGender(genderInput) {
       }
    }
 }
- 
 
+function submit() {
+   if (theAkanName === '' || dayOfBirth === '') {
+      alert('EMPTY FIELD. PLEASE INPUT YOUR DETAILS!');
+      getTheDay();
+   }
+
+   var message = ('Your Akan name is: ').concat (theAkanName);
+   message.concat('\n You were born on a: ').concat (dayOfBirth);
+   alert(message);
+}

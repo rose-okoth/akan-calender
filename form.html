@@ -21,19 +21,21 @@
 
             <form>
                 <p>Please input your birth date:</p>
-                <p>Date:</p>
+                    <label for="date">Date:</label>
                     <input type="text" id="date" name="date" value="">
-                <p>Month:</p>
+               
+                    <label for="month">Month:</label>
                     <input type="text" id="month" name="month" value="">
-                <p>Year</p>
+               
+                    <label for="year">Year:</label>
                     <input type="text" id="year" name="year" value="">
 
                 <p>Please input your gender:</p>
                 <p>Gender</p>
+                    <label for="gender">Gender:</label>
                     <input type="text" id="gender" name="gender" value="">
                     
-                <p><input type="button" id="submit" value="Submit" onSubmit="retrieveInput();" /></p>
-
+                    <input type="submit" onClick="submit()" value="Submit">
             </form>
     </body>
 </html>
