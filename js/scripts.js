@@ -8,8 +8,10 @@ var mons =
 
 var akanMale = 
          ['Kwasi' 'Kwadwo' 'Kwabena' 'Kwaku' 'Yaw' 'Kofi' 'Kwame'];
+console.log(akanMale);
 
 var akanFemale = ['Akosua' 'Adwoa' 'Abenaa' 'Akua' 'Yaa' 'Afua' 'Ama'];
+console.log(akanFemale);
 
 var dayOfBirth = '';
 
