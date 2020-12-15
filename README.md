@@ -28,8 +28,7 @@
             3. JAVASCRIPT
 
       #link to live site on GitHub Pages
-
-
+            https://rose-okoth.github.io/akan-calender/
 
       #copyright and license information
             Copyright (c) 2020 rose-okoth 
