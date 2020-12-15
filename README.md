@@ -8,11 +8,14 @@
             okoth.rose0@gmail.com
 
       #description of project
-            It's a calender that works to generate the user's Akan name based of off their dates of birth and gender.
+            It's a web application that works to generate the user's Akan name based of off their dates of birth and gender.
 
       #project setup instructions
-            It has been built using HTML, CSS, Bootstrap and Javascript.
-
+            1.Git clone akan calender.
+            2.Navigate to the code.
+            3.Navigate to the index.html.
+            4.To edit, code .
+            
       #BDD 
             1.Acquiring information from the user. i.e. The user's birthday.
             2.Calculating the day of the week they were born using their birthday and the formula given.
