@@ -27,6 +27,7 @@ function retrieveInput() {
    userInput.push(year);
    var gender= parseInt(document.getElementById('gender').value);
    userInput.push(gender);
+   document.getElementById('result').innerHTML = demo(m,d,y);
    return userInput;
 }
 
