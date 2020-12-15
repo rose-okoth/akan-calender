@@ -2,16 +2,17 @@ var days =
          ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
        'Thursday', 'Friday', 'Saturday'];
 
-var mons =
+var months =
          ['January','February','March','April','May','June',
         'July','August','September','October','November','December'];
 
-var akanMale = 
-         ['Kwasi' 'Kwadwo' 'Kwabena' 'Kwaku' 'Yaw' 'Kofi' 'Kwame'];
-console.log(akanMale);
+var akanMale = '';
 
-var akanFemale = ['Akosua' 'Adwoa' 'Abenaa' 'Akua' 'Yaa' 'Afua' 'Ama'];
-console.log(akanFemale);
+var akanMale = [ 'Kwasi', 'Kwadwo', 'Kwabena', 
+         'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+
+var akanFemale = [ 'Akosua', 'Adwou', 'Abenaa', 
+         'Akua', 'Yaa', 'Afua', 'Ama'];
 
 var dayOfBirth = '';
 
@@ -82,7 +83,7 @@ function getTheDay() {
 function getGender(genderInput) {
    var gender = genderInput.toUpperCase();
    var isMale = 1;
-   var isFemale = 2:
+   var isFemale = 2;
 
    if (gender.startsWith('M')) {
       return isMale;
